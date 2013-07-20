@@ -1,6 +1,8 @@
 package com.czj.linux.shell;
 
 
+import java.util.Collection;
+
 import org.apache.hadoop.conf.Configuration;
 
 
@@ -9,7 +11,7 @@ import com.czj.conf.CommonConstants;
 
 public class ShellCommand {
 	
-	private  String HOSTNAME = CommonConf.getConf().get
+	private  Collection<String> HOSTNAME = CommonConf.getConf().getStringCollection(CommonConstants.HOSTNAMES);
 	
 	
 	
